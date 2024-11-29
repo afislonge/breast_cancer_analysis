@@ -24,6 +24,26 @@ To set up and run the project, ensure the following software and libraries are i
 2. Virtual Environment (recommended)
 3. Git
 
+## Usage
+
+### Step 1: Clone the Repository
+
+Clone the GitHub repository to your local machine:
+
+```bash
+git clone <repository-url>
+cd breast_cancer_analysis
+```
+
+### Step 2: Set Up Virtual Environment
+
+Create and activate a virtual environment:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
 ### Python Libraries:
 
 Install the required libraries using `pip`:
@@ -31,3 +51,17 @@ Install the required libraries using `pip`:
 ```bash
 pip install -r requirements.txt
 ```
+
+### Step 3: Run the Streamlit App
+
+Run the Streamlit application locally:
+
+```bash
+streamlit run app.py
+```
+
+### Step 4: Interact with the App
+
+Enter feature values in the input fields.
+Click "Predict" to see the result (Malignant or Benign).
+View the model's accuracy displayed in the app.
