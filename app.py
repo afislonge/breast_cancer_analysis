@@ -78,7 +78,7 @@ if st.button("Predict"):
     # Make prediction with custom model
     custom_prediction = loaded_custom_model.predict(input_data)
     pred = custom_prediction[0]
-    custom_prediction_prob = round(pred[0],3)
+    custom_prediction_prob = round(pred[0],2)
     custom_prediction_class = "Malignant" if custom_prediction_prob > 0.5 else "Benign"
 
     # Display result
